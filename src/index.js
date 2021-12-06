@@ -4,13 +4,12 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const DATA = [
-	{ id: "todo-0", name: "Eat", completed: true },
-	{ id: "todo-1", name: "Sleep", completed: false },
-	{ id: "todo-2", name: "Rave", completed: false },
-	{ id: "todo-3", name: "Repeat", completed: false },
+const INITIAL_TASKS = [
+	{ id: "todo-0", name: "Coffee", completed: false },
+	{ id: "todo-1", name: "Breakfast", completed: false },
+	{ id: "todo-2", name: "Code", completed: false },
 ];
 
-ReactDOM.render(<App tasks={DATA} />, document.getElementById("root"));
+ReactDOM.render(<App tasks={INITIAL_TASKS} />, document.getElementById("root"));
 
 reportWebVitals();
