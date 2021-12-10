@@ -4,8 +4,8 @@ import { nanoid } from "nanoid";
 import ToDo from "./components/Todo";
 import ButtonForm from "./components/Form";
 
-const App = (props) => {
-	const [tasks, setTasks] = useState(props.tasks);
+const App = () => {
+	const [tasks, setTasks] = useState([]);
 	const addTask = (name) => {
 		const newTask = { id: "todo-" + nanoid(), name: name, completed: false };
 		setTasks([...tasks, newTask]);
